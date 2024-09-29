@@ -349,7 +349,7 @@
 
 .footer__img{
     margin-top: 80px;
-    width: 375px;
+    max-width: 375px;
     display: flex;
     justify-content: space-between;
 }
@@ -367,4 +367,16 @@
 
 .d-none{
     display: none;
+}
+
+@media screen and (max-width: 391px) {
+    .skills__programs{
+        justify-content: center;
+    }
+    .footer__button{
+        width: 100%
+    }
+    .head__img{
+        width: 100%
+    }
 }
