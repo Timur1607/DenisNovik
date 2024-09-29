@@ -27,12 +27,19 @@
     padding: 0;
 }
 
-.head__container{
+.container{
     max-width: 1000px; /* например, максимальная ширина контейнера */
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
 }
+
+
+    /* max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px; */
+
 
 .head__title{
     
@@ -107,17 +114,12 @@
     /* padding: 120.25px 253px 107px 252px; */
     margin: 0 auto;
     background: #F6F6F6;
-    padding: 0 30px;
 }
-.aboutme__container{
-    max-width: 940px; /* например, максимальная ширина контейнера */
-    /* width: 100%; */
-    margin: 0 auto;
-}
+
 .aboutme__text{
     max-width: 485.344px;
     width: 100%;
-    height: 218px;
+    /* height: 218px; */
     border: 1px solid black;
     border: none;
     display:flex;
@@ -128,20 +130,18 @@
     font-size: 18px;
     font-weight: 400;
     font-family: "Gilroy-medium", sans-serif;
+    padding-bottom: 76px;
 }
-.about__h2{
+.aboutme__h2{
     display:flex;
     justify-content: center;
     font-family: "Gilroy-bold", sans-serif;
     font-size: 34px;
+    padding-top: 81px;
+    padding-bottom: 30px;
 }
 
-.skills__container{
-    max-width: 940px; /* например, максимальная ширина контейнера */
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
-}
+
 
 .skills{
     /* padding: 91px 253px 110.06px 252px; */
@@ -155,6 +155,7 @@
     font-style: normal;
     line-height: normal;
     color: black;
+    padding-top: 83px;
 }
 
 .skills__description{
@@ -172,6 +173,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 98px;
 }
 .skills__program{
     /* border: 1px, solid black; */
@@ -220,13 +222,8 @@
     /* padding: 112.93px 253px 96.07px 252px; */
     margin: 0 auto;
     background-color: #F6F6F6;
-}
-
-.portfolio__container{
-    max-width: 1000px; /* например, максимальная ширина контейнера */
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
+    padding-top: 81px;
+    padding-bottom: 81px;
 }
 
 .portfolio__homepage__img{
@@ -255,7 +252,6 @@
     /* border: 1px solid black; */
     margin-top: 47px;
     /* width: 940px; */
-    margin-bottom: 99.09px;
     display: block;
     text-decoration: none;
     color: black;
@@ -298,13 +294,11 @@
     /* padding: 114.24px 253px 123.19px 252px; */
     margin: 0 auto;
     padding-bottom:123px;
+    padding-top: 82px;
+    padding-bottom: 90px;
 }
 
-.footer__container{
-    max-width: 940px; /* например, максимальная ширина контейнера */
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .footer__h2{
     text-align: center;
@@ -334,7 +328,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    margin-bottom: 85.78px;
+    margin-bottom: 48px;
     transition: 0.5s;
     border: black 1px solid;
     text-decoration: none;
@@ -348,7 +342,7 @@
 }
 
 .footer__img{
-    margin-top: 80px;
+    margin-top: 48px;
     max-width: 375px;
     display: flex;
     justify-content: space-between;
