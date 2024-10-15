@@ -76,7 +76,87 @@
     max-width: 940px;
     width: 100%;
     margin: 32px 0 40px 0;
+}
 
+.burger__label{
+    z-index: 10;
+}
+
+.head__burger{
+    display: none;
+    position: absolute;
+    width: 33px;
+    height: 19px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+}
+
+.head__burger input:checked ~ .burger__menu{
+    right: 0;
+}
+
+.head__burger input:checked ~ .burger__line::after{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#input:checked ~ .burger__line{
+    transform: rotate(45deg);
+    
+}
+
+.head__burger input:checked ~ .burger__line::before{
+    transform: rotate(0deg);
+    top: 0;
+}
+
+.burger__menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 100%;
+    padding: 66px 28px;
+    list-style: none;
+    transition: 0.5s;
+}
+
+#chekbox{
+    display: none;
+}
+
+.menu__a{
+    color: #090909;
+    font-family: "Gilroy-bold", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.burger__line, .burger__line::before, .burger__line::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.burger__line::before{
+    content:"";
+    top: -8px;
+}
+
+
+.burger__line::after{
+    content:"";
+    top:8px;
 }
 
 .head__h1{
@@ -84,6 +164,8 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 50px;
+    margin-top: 60px;
+    position: relative;
 }
 
 .head__H1{
@@ -91,6 +173,7 @@
     width: 123.51px;
     font-family: "Gilroy-bold", sans-serif;
     font-size: 47px;
+
 }
 
 .head__city{
@@ -363,6 +446,8 @@
     display: none;
 }
 
+
+
 @media screen and (max-width: 391px) {
     .skills__programs{
         justify-content: center;
@@ -372,5 +457,34 @@
     }
     .head__img{
         width: 100%
+    }
+
+    .head__title{
+        display: none;
+    }
+
+    .head__hr{
+        display: none;
+    }
+
+    .head__burger{
+        display: flex;
+        position: absolute;
+        right: 17px;
+        top:21px;
+        padding: 0;
+    }
+
+    .burger__line{
+        display: flex;
+    }
+
+    .head__h1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head__H1{
+        margin-bottom: 23px;
     }
 }
